@@ -1,0 +1,22 @@
+# Build output
+site/
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Local tooling
+.sites-runtime/
+.cache/
+
+# Projectless Codex working folders
+work/
+outputs/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
