@@ -1,5 +1,5 @@
 ---
-title: 李亭皑｜个人科研主页
+title: 李亭皑｜个人主页
 description: 个人简介、研究方向、项目，以及论文阅读、复现和技术笔记的统一入口。
 hide:
   - navigation
