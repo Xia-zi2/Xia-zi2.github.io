@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="项目图片占位图">
+  <rect width="640" height="360" fill="#e9f0f4"/>
+  <path d="M80 282V82h480M160 82v200M240 82v200M320 82v200M400 82v200M480 82v200M80 132h480M80 182h480M80 232h480" stroke="#c2d2dc" stroke-width="2"/>
+  <path d="M95 245c70-13 97-86 165-71 61 14 71 64 133 38 50-21 75-76 152-88" fill="none" stroke="#167d7f" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="260" cy="174" r="13" fill="#153a5b"/>
+  <circle cx="393" cy="212" r="13" fill="#153a5b"/>
+  <text x="96" y="56" font-family="system-ui, sans-serif" font-size="24" font-weight="650" fill="#153a5b">PROJECT VISUAL · TODO</text>
+</svg>

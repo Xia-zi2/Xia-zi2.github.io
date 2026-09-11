@@ -1,0 +1,1 @@
+"""Local MkDocs build hooks."""

@@ -1,0 +1,148 @@
+site_name: 李亭皑｜个人科研主页
+site_description: 李亭皑的个人学术主页、项目展示与科研知识库。
+site_author: 李亭皑
+site_url: https://Xia-zi2.github.io/
+repo_name: Xia-zi2/Xia-zi2.github.io
+repo_url: https://github.com/Xia-zi2/Xia-zi2.github.io
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 李亭皑 · 内容持续更新中
+strict: true
+use_directory_urls: true
+exclude_docs: |
+  superpowers/
+  CONTRIBUTING.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+  favicon: assets/images/favicon.svg
+  icon:
+    logo: material/flask-outline
+    repo: fontawesome/brands/github
+  font: false
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.footer
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换至浅色模式
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+      separator: '[\s\-、。，；？！：]+'
+  - tags
+  - blog:
+      blog_dir: blog
+      post_dir: "{blog}/posts"
+      blog_toc: true
+      archive: true
+      categories: true
+      post_date_format: yyyy年MM月dd日
+      post_url_date_format: yyyy/MM/dd
+      post_url_format: "{slug}"
+      pagination_per_page: 8
+      pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
+
+hooks:
+  - hooks/homepage.py
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: 本页目录
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Xia-zi2
+      name: GitHub
+
+nav:
+  - 首页: index.md
+  - 项目:
+      - 项目总览: projects/index.md
+      - ArtHOI Reconstruction: projects/arthoi-reconstruction.md
+      - Unified Dexterous Hand Representation: projects/dexterous-hand-representation.md
+      - RAG / Evidence Reasoning Research: projects/rag-evidence-reasoning.md
+  - 研究/论文:
+      - 研究入口: research/index.md
+      - 论文阅读:
+          - 阅读索引: papers/index.md
+          - LightRAG: papers/lightrag.md
+      - 论文复现:
+          - 复现索引: reproductions/index.md
+          - ArtHOI Reconstruction: reproductions/arthoi.md
+  - 笔记:
+      - 技术笔记索引: learning/index.md
+      - Deep Learning:
+          - Multi-head Attention: learning/multi-head-attention.md
+  - 博客: blog/index.md
+  - 关于/CV:
+      - 关于我: about.md
+      - CV: cv.md
+      - 写作与发布: writing.md
+      - 标签: tags.md

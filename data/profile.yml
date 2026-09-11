@@ -1,0 +1,28 @@
+# 个人信息唯一配置入口。未确认的信息请保留 TODO，不要在页面中复制多份。
+name: 李亭皑
+eyebrow: 个人学术主页 · Research Notes
+institution: 中国科学技术大学
+fields:
+  - 数学
+  - 计算机科学
+intro: 关注 Computer Graphics × AI、3D Vision、Dexterous Hand、RAG / Agent 与 Formal Methods。本站用于整理项目、论文阅读、复现过程和技术笔记。
+avatar: assets/images/avatar-placeholder.svg
+
+links:
+  github: https://github.com/Xia-zi2
+  email: "TODO: 请填写公开邮箱，例如 mailto:name@example.com"
+  cv: cv/
+  scholar: "TODO: Google Scholar 链接"
+  orcid: "TODO: ORCID 链接"
+
+interests:
+  - name: Computer Graphics × AI
+    description: 关注生成模型、神经表示与图形学问题的交叉方法。
+  - name: 3D Vision / Reconstruction
+    description: 关注三维场景、物体与人体交互的表示和重建。
+  - name: Dexterous Hand / Grasp
+    description: 关注灵巧手表示、抓取生成与可泛化操控。
+  - name: RAG / Agent
+    description: 关注可追溯检索、证据推理与智能体工作流。
+  - name: Formal Methods / Lean
+    description: 关注形式化证明、可验证推理与 Lean 工具链。
